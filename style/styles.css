@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color: rgba(254, 163, 1, 1);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 65px;
+}
+/* header styles */
+.school{
+    justify-content: space-around;
+    align-items: center;
+}
+.school-nav{
+    justify-content: center;
+    align-items: center;
+}
+.school-head{
+    font-weight: 700;
+    font-size:2rem;
+}
+.school-navbar-link{
+    gap: 50px;
+}
+.nav-home{
+    color: rgba(254, 163, 1, 1);
+   
+}
+.nav-about{color: rgba(254, 163, 1, 1);}
+.nav-faci{color: rgba(5, 212, 223, 1);}
+.nav-admi{color: rgba(93, 88, 239, 1);}
+.nav-home,.nav-about,.nav-admi,.nav-faci{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.school-list{
+    list-style: none;
+}
+.school-link{
+    text-decoration: none;
+}
+/* responsive styles */
+
+    @media (max-width: 768px) {
+        .school,.school-navbar-list{
+            flex-direction: column;
+           
+        }
+        .school-navbar-list{
+            gap:15px;
+        }
+        .btn-primary{
+            padding: 10px 25px;
+        }
+        
+        
+    }
+    
+    
+    
