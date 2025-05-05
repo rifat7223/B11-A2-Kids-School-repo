@@ -16,6 +16,18 @@
     border-radius: 12px;
     padding: 15px 65px;
 }
+.btn-secondary{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 40px;
+    margin-top: 24px;
+}
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 /* header styles */
 .school{
     justify-content: space-around;
@@ -49,21 +61,60 @@
 .school-link{
     text-decoration: none;
 }
+/* empowering */
+.empowering-kids{
+    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.empowering{
+    max-width: 700px;
+   
+
+}
+.empowering-tittle{
+    font-weight: 700;
+    font-size: 56px;
+}
+.emp{ color: rgba(254, 163, 1, 1);}
+.vision{color: rgba(1, 172, 253, 1);}
+.empowering-description{
+    margin-top: 24px;
+}
+.kids{
+    width: 100%;
+    height: auto;
+}
 /* responsive styles */
 
     @media (max-width: 768px) {
-        .school,.school-navbar-list{
+        .school,
+        .school-navbar-link{
             flex-direction: column;
+            
+        }
+        
+            
            
+        
+        .school-navbar-link{
+            gap: 10px;
         }
-        .school-navbar-list{
-            gap:15px;
-        }
+        
         .btn-primary{
             padding: 10px 25px;
+           
         }
         
+        .empowering-kids{
+            flex-direction: column-reverse;
+            padding: 30px;
+        }
+       
         
+       
     }
     
     
