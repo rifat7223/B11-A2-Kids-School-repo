@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-
+.background-image{
+    background-image: url(../assets/bg.png);
+    
+}
 
 /* shared style */
 .display-flex{
@@ -24,10 +27,8 @@
     padding: 10px 40px;
     margin-top: 24px;
 }
-main{
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
+
 /* header styles */
 .school{
     justify-content: space-around;
@@ -63,6 +64,8 @@ main{
 }
 /* empowering */
 .empowering-kids{
+    max-width:1400px;
+    margin: 0 auto;
     
     align-items: center;
     justify-content: center;
@@ -87,18 +90,55 @@ main{
     width: 100%;
     height: auto;
 }
+/* standard cariculaum */
+.Standard-Curriculum-tittle{
+    font-weight: 700;
+    text-align: center;
+    font-size: 46px;
+}
+.Standard-Curriculum{
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 24px;
+}
+.Standard-Curriculum-list,.bg-color{
+   border-radius: 19px;
+}
+.bg-color-kinder{background-image: linear-gradient(#DEFFFF,#ffffff);}
+.bg-color-elementary{background-image: linear-gradient(#FFF4DC,#ffffff);}
+.bg-color-middle{background-image:linear-gradient(#F2E8FF,#ffffff);}
+
+.Standard-img{
+    padding: 52px 115px 0px 115px;
+}
+.Standard-Curriculum-age{
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+
+}
+.Standard-Curriculum-description{
+    margin-top: 20px;
+    padding: 0px 41px 0px 41px;
+}
+.Standard-Curriculum-read{
+    margin-top: 34px;
+    text-align: center;
+    color: rgba(100, 200, 255, 1);
+}
+
+
 /* responsive styles */
 
     @media (max-width: 768px) {
         .school,
-        .school-navbar-link{
+        .school-navbar-link,
+        .Standard-Curriculum{
             flex-direction: column;
             
         }
-        
-            
-           
-        
         .school-navbar-link{
             gap: 10px;
         }
@@ -107,15 +147,19 @@ main{
             padding: 10px 25px;
            
         }
-        
         .empowering-kids{
             flex-direction: column-reverse;
             padding: 30px;
         }
-       
         
-       
-    }
-    
+          
+        .Standard-Curriculum-list{
+            box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+            
+        
+ 
+  
+}
     
     
