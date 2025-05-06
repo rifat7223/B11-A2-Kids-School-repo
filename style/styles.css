@@ -7,6 +7,10 @@
     background-image: url(../assets/bg.png);
     
 }
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 /* shared style */
 .display-flex{
@@ -26,6 +30,15 @@
     border-radius: 12px;
     padding: 10px 40px;
     margin-top: 24px;
+}
+.btn-third{
+    background-color: #3CD8E8;
+    color: white;
+    border: none;
+    border-radius: 47px;
+    padding: 15px 19px;
+    margin-top:-200px;
+   margin-left:30px;
 }
 
 
@@ -64,19 +77,17 @@
 }
 /* empowering */
 .empowering-kids{
-    max-width:1400px;
-    margin: 0 auto;
     
     align-items: center;
     justify-content: center;
     gap: 20px;
 
 }
-.empowering{
-    max-width: 700px;
+
+    
    
 
-}
+
 .empowering-tittle{
     font-weight: 700;
     font-size: 56px;
@@ -97,13 +108,13 @@
     font-size: 46px;
 }
 .Standard-Curriculum{
-    max-width: 1200px;
-    margin: 0 auto;
+   
     gap: 20px;
     margin-top: 24px;
 }
-.Standard-Curriculum-list,.bg-color{
+.Standard-Curriculum-list{
    border-radius: 19px;
+   box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;;
 }
 .bg-color-kinder{background-image: linear-gradient(#DEFFFF,#ffffff);}
 .bg-color-elementary{background-image: linear-gradient(#FFF4DC,#ffffff);}
@@ -128,14 +139,71 @@
     text-align: center;
     color: rgba(100, 200, 255, 1);
 }
+/* stories */
+.our{text-align: center;
+font-weight: 700;
+font-size: 50px;
+margin-top: 50px;}
+.story{
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+   border-radius: 16px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+}
+.story-tittle{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.story-description{margin-top: 40px;}
+.story-section{
+    padding: 38px 28px;
+}
+.story-1{
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0px 0px;
+}
+.stories{
+    
+    margin-top: 100px;
+    gap: 30px;
+}
+.more-story {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
 
+.more-story-size{ 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
 
+}
+.story-2{
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0px 0px;
+}
+.more-story-description{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 34px;
+}
+.story-btn{
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
 /* responsive styles */
 
     @media (max-width: 768px) {
         .school,
         .school-navbar-link,
-        .Standard-Curriculum{
+        .Standard-Curriculum,
+        .stories{
             flex-direction: column;
             
         }
@@ -156,7 +224,10 @@
         .Standard-Curriculum-list{
             box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-            
+           
+           
+       
+           
         
  
   
