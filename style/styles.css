@@ -197,16 +197,61 @@ margin-top: 50px;}
    align-items: center;
    margin-top: 50px;
 }
+/* footer */
+footer{
+    margin-top: 50px;
+  background-color: rgba(1, 172, 253, 1);
+  padding: 120px 140px; 
+  color: white;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+   
+}
+.footer-colum{
+    min-width: 200px;
+    flex: 1;
+}
+.kids-education{
+    margin-top: 30px;
+}
+.about{
+    margin-left: 140px;
+}
+.about-list{
+   margin-top: 30px;
+   list-style: none;
+  padding: 0;
+}
+li{
+    margin-top: 17px;
+}
+.icon-colum{
+    margin-top: 30px;
+}
+.icon{
+    margin-left: 10px;
+}
 /* responsive styles */
 
     @media (max-width: 768px) {
         .school,
         .school-navbar-link,
         .Standard-Curriculum,
-        .stories{
+        .stories,
+        .footer-container{
+       
             flex-direction: column;
             
         }
+        
+            
+           
+        
         .school-navbar-link{
             gap: 10px;
         }
@@ -224,13 +269,18 @@ margin-top: 50px;}
         .Standard-Curriculum-list{
             box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-           
-           
-       
+        .footer-container{
+            align-items: center;
+            text-align: center;
+        }
+       .footer-colum{
+        margin:20px 0 ;
+       } 
+    }
            
         
  
   
-}
+
     
     
